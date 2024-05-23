@@ -1,0 +1,576 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+:root {
+    --color1: #ff9c23;
+    --color2: #485c51;
+    --color3: #272424;
+    --color4: #ffffff;
+    --box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    
+}
+
+body,html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+
+#header {
+min-height: 100vh;
+background: url('Assets/images/map-removebg-preview.png');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+position: relative;
+max-width: 100vw;
+}
+
+#header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+}
+  
+#nav-bar {text-align: center;
+        color: white;
+        padding:  0;
+        margin: 0;
+        justify-content: space-between;
+        display: flex;
+        width: 100vw;
+
+        }
+.nav {
+  position: fixed; 
+  top: 0;
+   left:0; 
+  padding:  0 0 0 30;
+ width: 100vw;
+  height: 5rem;
+  display: flex;
+  margin: 5 0 10 10;
+  background-color: rgb(253, 235, 235);
+  
+}
+       .link-list{
+        font-family: sans-serif;
+        font-size: large;
+        width: 100vw;
+        margin-left: 300px;
+         } 
+
+.link-list a{
+    text-decoration: none;
+    color: white;
+
+      }
+.link-list a:active {
+  color:#ff9c23;}
+
+
+ul { margin-left: 500px;
+margin-top: 0;
+margin-right: 8px;
+margin-bottom: 0;}
+
+li {display: inline-block; margin: 0.5rem;
+  font-weight: 400;
+
+    }
+
+    #logo {
+           width: 4rem;
+            height: 5rem;
+            display: flex;    
+            margin-left: 8rem; 
+            margin-top: 0;
+    }
+  #header-img {display: flex; 
+    position: top;
+    width: 100vw;
+    display: flex;
+    background-color: #e3ecf0;
+    height: 50rem;
+    padding: 0;
+    margin: 0;
+}
+.welcome{
+  position: absolute;
+  z-index: 10;
+  width: 40vw;
+  text-align: center;
+  text-decoration: none;
+  left: 350px;
+  top: 180px;
+}
+.welcome h1 {
+    font-size: 50px;
+    color: #e3ecf0;
+    font-style: normal;
+    font-family:Verdana, Tahoma, sans-serif;
+    text-align: center;
+
+}
+
+.welcome button {
+    font-size: 20px;
+    color: #e3ecf0;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+ button a {
+  color: white;
+  text-decoration: none;
+ }
+  button a:visited {
+    color: brown;
+  }
+  
+  button a:hover {
+    color: #ff9c23;
+  }
+  
+
+
+.welcome button {
+color: white;
+  margin-top: 0;
+  padding: .5rem 1rem;
+  border: 1px solid #ff9c23;
+  border-radius: 30px;
+  z-index: 20;
+  background-color: transparent;
+}
+
+
+.intro{
+width: 100vw;
+min-height: 70vh;
+display: grid;
+align-items: center;
+grid-template-columns: 1fr 3fr;
+}
+
+h2 {font-size: 40px;
+  font-weight: 600;
+  color: var(--color3);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.intro h2 {
+max-width: 30%;
+max-height: 90%;
+margin-top: 10px;
+margin-left: 15rem;
+margin-right: 1rem;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+
+.intro ul{
+  font-size: 28px;
+  max-width: 100%;
+  margin-right: 95px;
+  margin-left: 1rem;
+  padding: 2rem;
+box-shadow: var(--box-shadow);
+list-style-type: disc; 
+
+}
+
+.youtube {margin-left: 350px;}
+
+.ourwork {
+background-color: #f4f3f8;
+z-index: 12;
+
+}
+
+.works-h1 {
+max-width: 100%;
+max-height: 100%;
+margin-top: 6rem;
+margin-left: 2rem;
+margin-right: 1rem;
+margin-bottom: 4px;
+padding: 0;
+display: flex;
+justify-content: center;
+font-size: 22px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+}
+
+.works-grid {
+max-width: 80vw;
+min-height: 70vh;
+display: grid;
+align-items: center;
+grid-template-columns: 1fr 1fr;
+margin-left: 5rem;
+margin-right: 5rem;
+z-index: 15;
+}
+
+
+
+
+
+
+.scientific {
+max-width: 40vw;
+display: grid;
+align-items: left;
+grid-template-columns: 1fr 1fr;
+margin-right: 5rem;
+margin-left: 0.1rem;
+box-shadow: var(--box-shadow);
+z-index: 20;
+
+}
+
+#data {
+  width: 11rem;
+  height: 23rem;   
+  margin-left:0rem; 
+  margin-top: 1rem;
+  margin-right: 0rem;
+
+}
+.data{
+  width: 14.5rem;
+  height: 15rem;  
+  margin-left: 1.3rem; 
+  margin-right: 5rem;
+  margin-top: 3rem;
+font-size: 18px;
+justify-content: space-between;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+
+
+
+.community-impact {  
+  width: 40vw;
+  display: grid;
+  align-items: left;
+  grid-template-columns: 1fr 1fr;
+  margin-left: -3rem;
+  box-shadow: var(--box-shadow);
+z-index: 20;}
+
+#community {  
+  width: 11rem;
+  height: 23rem;   
+  margin-left: 0rem; 
+  margin-top: 1rem;
+  margin-right: 1rem;}
+
+.community  {
+  width: 13rem;
+  height: 15rem;  
+  margin-left: 0; 
+  margin-right: 4rem;
+  margin-top: 3rem;
+  font-size: 18px;
+  justify-content: space-between;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+
+
+
+  .social-research {
+    width: 50vw;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20rem;
+    box-shadow: var(--box-shadow);
+  z-index: 20; 
+  max-height: 25rem;
+  }
+
+  #social{
+    width: 20rem;
+    height: 25rem;   
+    margin-left: 0rem; 
+    margin-top: 0rem;
+    margin-right: 3rem;
+  
+    
+  }
+  .social {  width: 14rem;
+    height: 13rem;  
+    margin-left: 0; 
+    margin-right: 4rem;
+    margin-top: 0.5rem;
+    font-size: 18px;
+    justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+
+
+
+
+
+
+    #what-we-have-done h1 {max-width: 100%;
+      max-height: 100%;
+      margin-top: 4rem;
+      margin-left: 2rem;
+      margin-right: 1rem;
+      margin-bottom: 4px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      font-size: 33px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;}
+
+      .whatwehavedone {
+        max-width: 100vw;
+min-height: 70vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+margin-left: 9rem;
+margin-right: 5rem;
+      }
+
+      .community-impact-project{
+        width: 25vw;
+        display: grid;
+        align-items: left;
+        margin-left: 0.1rem;
+        box-shadow: var(--box-shadow);
+        height: 24rem;  
+        margin-right: 2rem;
+        margin-top: 5rem;
+    
+      
+      }
+
+      .community-impact-project h2 {
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+        width: 25vw;
+        display: grid;
+        align-items: center;
+        margin-left: 2rem;
+        margin-right: 6rem;  
+        margin-top: 9rem;}
+
+.community-impact-project p {
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+  width: 20vw;
+  align-items: center;
+  margin-left: 0.1rem;
+  height: 1rem;  
+  margin-left: 2.5rem;  
+  margin-right: 4rem;
+  margin-top: 0.1rem; 
+}
+
+
+.community-impact-project ul{
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+  width: 25vw;
+  align-items: left;
+  margin-right: 0rem;
+  height: 10rem;  
+  margin-left: -1.0rem;  
+  margin-top:- 0.1rem;  }
+
+
+      .science-advocacy-programs {
+        width: 25vw;
+        display: grid;
+        align-items: center;
+        margin-left: 0.1rem;
+        box-shadow: var(--box-shadow);
+        height: 24rem;  
+        margin-right: 1rem;
+        margin-left: -1rem;
+        margin-top: 5rem;
+
+      }
+
+
+      .science-advocacy-programs h2 {
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+        width: 25vw;
+        display: grid;
+        align-items: center;
+        margin-right: 1rem;
+        margin-left: 2rem;  
+        margin-top: 7rem;
+
+      }
+
+      .science-advocacy-programs p {
+        font-size: 17px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+        width: 20vw;
+        align-items: center;
+        margin-left: 0.1rem;
+        height: 1rem;  
+        margin-left: 2rem;  
+        margin-top: 0.1rem;  
+      }
+
+      .science-advocacy-programs ul {
+      font-size: 17px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+      width: 17rem;
+      align-items: left;
+      margin-right: 0rem;
+      height: 15rem;  
+      margin-left: -1.0rem;  
+      margin-top:- 0.1rem;  }
+
+
+      .scientific-projects {
+        width: 25vw;
+        display: grid;
+        align-items: right;
+        margin-left: -2rem;
+        box-shadow: var(--box-shadow);
+        height: 24rem;  
+        margin-right: 2rem;
+        margin-top: 5rem;
+
+      }
+
+      .scientific-projects h2 {
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+        width: 25vw;
+        display: grid;
+        align-items: center;
+        margin-left: 4rem;  
+        margin-top: 9rem;
+      }
+
+
+      .scientific-projects p {
+        font-size: 17px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+        width: 25vw;
+        align-items: center;
+        margin-left: 1rem;
+        height: 1rem;  
+        margin-right: 2.5rem;  
+        margin-top: 0.1rem;
+      }
+    
+      .scientific-projects ul {
+      font-size: 17px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+      width: 10vw;
+      align-items: left;
+      margin-right: 0rem;
+      height: 10rem;  
+      margin-left: -1.0rem;  
+      margin-top:- 0.1rem; }
+
+
+      #our-partners {
+        background-color: #f4f3f8;
+        position: relative;
+        max-width: 100vw;
+        min-height: 70vh;
+        margin-top: 5rem;
+        padding-block: 1rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+      #partners {
+        margin-top: 4rem;
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+      }
+
+      #partners img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+
+#our-partners a {
+  color: white;
+  background-color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 5px;
+ }
+  
+
+      .footer {
+       
+        background-color: rgb(36, 35, 35);
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+
+      }
+
+      .footer_container {
+        color: #a1a4a7;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 1rem;
+        width: 80%;
+        border-bottom: solid white 1px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #address {
+        max-width: 23rem;
+      }
+     
+      .links {
+        max-width: 8.7rem;
+      }
+.links a {
+  text-decoration: none;
+  color: #a1a4a7; 
+}
+      .copyright {
+        color: #a1a4a7;
+      }
+
+ 
+      .footerimage img {width: 2rem;
+        height: 2rem;}
